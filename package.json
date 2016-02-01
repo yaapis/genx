@@ -13,10 +13,21 @@
   "keywords": [
     "genx"
   ],
-  "author": "Mario Mendes",
+  "author": {
+    "name": "Mario Mendes",
+    "url": "https://github.com/hyprstack"
+  },
   "license": "ISC",
+  "bin": {
+    "genx": "./index.js"
+  },
   "bugs": {
     "url": "https://github.com/hevnly/genx/issues"
   },
-  "homepage": "https://github.com/hevnly/genx"
+  "homepage": "https://github.com/hevnly/genx",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "sitemap": "^1.5.0",
+    "underscore": "^1.8.3"
+  }
 }

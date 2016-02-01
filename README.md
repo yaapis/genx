@@ -3,7 +3,7 @@
 
 ## To run tool:
 
-`genx -url <baseUrl> -jp <pathToJsonFile>`
+`genx -url <baseUrl> <pathToJsonFile>`
 
 Command takes two parameters:
 
@@ -23,13 +23,29 @@ Sample json structure:
 
 ```javascript
     {
-        categories: ['a', 'b', 'c'],
-        editions: ['a', 'b', 'c'],
-        posts: [
-            {
-                edition: 'bla', 
-                slug: 'bla'
-            }
+      "categories": {
+        "frequency": "Monthly",
+        "priority": 1,
+        "urls": ["aaaa", "bbbb", "cccc"]
+      },
+      "editions": {
+        "frequency": "Weekly",
+        "priority": 0.7,
+        "urls": ["ffff", "gggg", "dddd"]
+      },
+      "posts": {
+        "frequency": "Weekly",
+        "priority": 0.5,
+        "urls": [
+          {
+            "edition": "Bla",
+            "slug": "Bla"
+          },
+          {
+            "edition": "Red",
+            "slug": "Red"
+          }
         ]
+      }
     }
 ```
