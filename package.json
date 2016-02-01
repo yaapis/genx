@@ -1,0 +1,22 @@
+{
+  "name": "genx",
+  "version": "1.0.0",
+  "description": "Command-line tool to generate sitemaps xml files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hevnly/genx.git"
+  },
+  "keywords": [
+    "genx"
+  ],
+  "author": "Mario Mendes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hevnly/genx/issues"
+  },
+  "homepage": "https://github.com/hevnly/genx"
+}
