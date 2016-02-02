@@ -17,24 +17,29 @@ optGen.readJson = function (fileJson, callback) {
             callback(err, null);
         }
         obj = JSON.parse(data);
-        console.log(obj);
         callback(null, obj);
     });
 };
 
 optGen.generateObj = function (jsonObj, callback) {
+    var newObj = [];
 
-    var arrayOfOptions = [];
     _.each(jsonObj, function (value, key, list) {
-        var newObj = makeObject(key);
-        arrayOfOptions.push(newObj);
+        var newArray = makeObject(value);
+        newObj.push(newArray);
     });
-    callback(null, arrayOfOptions);
+
+    newObj = _.flatten(newObj);
+
+    callback(null, newObj);
 };
 
 module.exports = optGen;
 
+
 var makeObject =  function (section) {
+
+    var arrayOfOptions = [];
 
     var newObj = {
         url: '',
@@ -43,20 +48,9 @@ var makeObject =  function (section) {
     };
 
     _.each(section.urls, function (elem, index, list) {
-        console.log(index);
         newObj.url = elem;
-        return newObj;
+        arrayOfOptions.push(newObj);
     });
+
+    return arrayOfOptions;
 };
-
-//[
-//  { url: '/page-1/',  changefreq: 'daily', priority: 0.3 },
-//  { url: '/page-2/',  changefreq: 'monthly',  priority: 0.7 },
-//  { url: '/page-3/' } // changefreq: 'weekly',  priority: 0.5
-//]
-
-//"categories": {
-//    "frequency": "Monthly",
-//        "priority": 1,
-//        "urls": ["aaaa", "bbbb", "cccc"]
-//},

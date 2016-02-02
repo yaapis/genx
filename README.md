@@ -3,7 +3,7 @@
 
 ## To run tool:
 
-`genx -url <baseUrl> <pathToJsonFile>`
+`genx --url <baseUrl> --jp <pathToJsonFile>`
 
 Command takes two parameters:
 
