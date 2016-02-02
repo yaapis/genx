@@ -1,8 +1,8 @@
 # Command-line tool to generate sitemaps-xml file
 
-## To download package:
+## Installation:
 
-`npm install cli-xml-genx`
+    $ npm install cli-xml-genx
 
 
 ## To run tool:
