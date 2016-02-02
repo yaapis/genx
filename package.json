@@ -20,7 +20,7 @@
   },
   "license": "ISC",
   "bin": {
-    "genx": "./index.js"
+    "xml-genx": "./index.js"
   },
   "bugs": {
     "url": "https://github.com/hevnly/genx/issues"

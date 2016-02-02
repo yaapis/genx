@@ -7,7 +7,7 @@
 
 ## To run tool:
 
-`genx --url <baseUrl> --jp <pathToJsonFile>`
+`xml-genx --url <baseUrl> --jp <pathToJsonFile>`
 
 Command takes two parameters:
 
