@@ -36,16 +36,7 @@ Sample json structure:
       "posts": {
         "frequency": "Weekly",
         "priority": 0.5,
-        "urls": [
-          {
-            "edition": "Bla",
-            "slug": "Bla"
-          },
-          {
-            "edition": "Red",
-            "slug": "Red"
-          }
-        ]
+        "urls": ["hhhhh", "eeeee", "ttttt"]
       }
     }
 ```
