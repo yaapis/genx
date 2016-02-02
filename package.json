@@ -1,6 +1,6 @@
 {
   "name": "cli-xml-genx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command-line tool to generate xml sitemaps files by passing in a json object.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "https://github.com/hevnly/genx.git"
   },
-  "keywords": ["cli-xml-genx", "command-line sitemaps generator"],
+  "keywords": [
+    "cli-xml-genx",
+    "command-line sitemaps generator"
+  ],
   "author": {
     "name": "Mario Mendes",
     "url": "https://github.com/hyprstack"
