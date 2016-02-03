@@ -1,6 +1,6 @@
 {
   "name": "cli-xml-genx",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Command-line tool to generate xml sitemaps files by passing in a json object.",
   "main": "index.js",
   "scripts": {
