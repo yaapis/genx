@@ -39,6 +39,17 @@ var makeObject =  function (section) {
 
     var arrayOfOptions = [];
 
+    /***** This section is added so that the base url is also crawled ****/
+    var baseObj = {
+        "frequency": "monthly",
+        "priority": 1,
+        "urls": ["/"]
+    };
+
+    arrayOfOptions.push(baseObj);
+
+    /************************************/
+
     _.each(section.urls, function (elem, index, list) {
         var newObj = {};
         newObj.changefreq = section.frequency;
