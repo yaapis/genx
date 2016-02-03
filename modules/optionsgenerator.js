@@ -22,12 +22,10 @@ optGen.readJson = function (fileJson, callback) {
 };
 
 optGen.generateObj = function (jsonObj, callback) {
-    var newObj = [];
 
-    _.each(jsonObj, function (value, key, list) {
-        var newArray = makeObject(value);
-        newObj.push(newArray);
-    });
+    var newObj = _.map(jsonObj, function (value, key) {
+        return makeObject(value);
+    }, this);
 
     newObj = _.flatten(newObj);
 
@@ -41,16 +39,14 @@ var makeObject =  function (section) {
 
     var arrayOfOptions = [];
 
-    var newObj = {
-        url: '',
-        changefreq: section.frequency,
-        priority: section.priority
-    };
-
     _.each(section.urls, function (elem, index, list) {
+        var newObj = {};
+        newObj.changefreq = section.frequency;
+        newObj.priority = section.priority;
         newObj.url = elem;
         arrayOfOptions.push(newObj);
-    });
+
+    }, this);
 
     return arrayOfOptions;
 };
