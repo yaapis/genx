@@ -14,24 +14,24 @@ Command takes two parameters:
     - base url
     - json file path with list of urls
     
-Tool should produce a sitemaps xml file with provided urls.
+Tool produces a site-maps xml file with provided urls and dumps the file in the current working directory.
 
-Sample json structure:
+Example json structure:
 
 ```javascript
     {
       "categories": {
-        "frequency": "Monthly",
+        "frequency": "monthly",
         "priority": 1,
         "urls": ["aaaa", "bbbb", "cccc"]
       },
       "editions": {
-        "frequency": "Weekly",
+        "frequency": "weekly",
         "priority": 0.7,
         "urls": ["ffff", "gggg", "dddd"]
       },
       "posts": {
-        "frequency": "Weekly",
+        "frequency": "weekly",
         "priority": 0.5,
         "urls": ["hhhhh", "eeeee", "ttttt"]
       }
