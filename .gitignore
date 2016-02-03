@@ -1,2 +1,5 @@
-node-modules
+node_modules
 .idea
+samples
+sitemap.xml
+.DS_Store
