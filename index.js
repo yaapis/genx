@@ -12,7 +12,7 @@ program
     .version('0.0.1')
     .option('-u, --url', 'Base url for site')
     .option('-j, --jp', 'Path to json file with list of paths to append to baseUrl')
-    .option('-d, --dest', 'Dest path')
+    .option('-d, --dest', 'Destination path. Current working directory by default.')
     .action(function (url, jp, dest) {
         dest = dest || process.cwd();
         optGen.readJson(jp, function (err, jsonObj) {
