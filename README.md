@@ -7,14 +7,15 @@
 
 ## To run tool:
 
-`xml-genx --url <baseUrl> --jp <pathToJsonFile>`
+`xml-genx --url <baseUrl> --jp <pathToJsonFile> --dest <destinationDir>` 
 
-Command takes two parameters:
+Command takes three parameters:
 
     - base url
     - json file path with list of urls
+    - destination path. Current working directory by default.
     
-Tool produces a site-maps xml file with provided urls and dumps the file in the current working directory.
+Tool produces a site-maps xml file with provided urls and dumps the file in the destination working directory.
 
 Example json structure:
 
