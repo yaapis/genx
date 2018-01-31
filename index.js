@@ -12,7 +12,9 @@ program
     .version('0.0.1')
     .option('-u, --url', 'Base url for site')
     .option('-j, --jp', 'Path to json file with list of paths to append to baseUrl')
-    .action(function (url, jp) {
+    .option('-d, --dest', 'Dest path')
+    .action(function (url, jp, dest) {
+        dest = dest || process.cwd();
         optGen.readJson(jp, function (err, jsonObj) {
             if (err) {
                 console.log(err);
@@ -33,7 +35,7 @@ program
                     if (err) {
                         console.log(err);
                     }
-                    fs.writeFile(path.join(process.cwd(), 'sitemap.xml'), xml, function (err) {
+                    fs.writeFile(path.join(dest, 'sitemap.xml'), xml, function (err) {
                         if (err) {
                             console.log(err);
                         }
