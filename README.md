@@ -2,7 +2,7 @@
 
 ## Installation:
 
-    $ npm install cli-xml-genx
+    $ npm install ya-xml-genx
 
 
 ## To run tool:
