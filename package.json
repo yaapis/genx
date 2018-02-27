@@ -1,31 +1,31 @@
 {
-  "name": "cli-xml-genx",
-  "version": "1.0.8",
-  "description": "Command-line tool to generate xml sitemaps files by passing in a json object.",
+  "name": "ya-xml-genx",
+  "version": "1.0.1",
+  "description": "YetAnother command-line tool to generate xml sitemaps files by passing in a json object.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hevnly/genx.git"
+    "url": "https://github.com/yaapis/genx.git"
   },
   "keywords": [
-    "cli-xml-genx",
+    "ya-xml-genx",
     "command-line sitemaps generator"
   ],
   "author": {
-    "name": "Mario Mendes",
-    "url": "https://github.com/hyprstack"
+    "name": "Bilyk Andrii",
+    "url": "https://github.com/yaapis"
   },
   "license": "ISC",
   "bin": {
     "xml-genx": "./index.js"
   },
   "bugs": {
-    "url": "https://github.com/hevnly/genx/issues"
+    "url": "https://github.com/yaapis/genx/issues"
   },
-  "homepage": "https://github.com/hevnly/genx",
+  "homepage": "https://github.com/yaapis/genx",
   "dependencies": {
     "commander": "^2.9.0",
     "sitemap": "^1.5.0",
